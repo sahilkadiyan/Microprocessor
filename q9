@@ -1,0 +1,17 @@
+MVI C, 08            //C=08
+Repeat: MOV D, C			8101=02(A)    H-L-8102=05(M) 8103=06(M)
+LXI H, 8101
+Loop: MOV A, M
+INX H
+CMP M    (if AC<M then carry flag is set to 1)
+JC Skip  (jump if there is carry)
+MOV B, M 			B=02
+MOV M, A 
+DCX H
+MOV M, B 
+INX H
+Skip: DCR D
+JNZ Loop
+DCR C
+JNZ Repeat
+HLT

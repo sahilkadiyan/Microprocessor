@@ -5,6 +5,8 @@ UCS617: Microprocessor based Systems Design
 LAB ASSIGNMENT
 8085 Microprocessor
 1.Introduction of 8085-microprocessor kit and steps for execution on the kit.
+
+
 2.Familiarity with 8085-microprocessor kit. 
 2.1.Write a program to store 8-bit data into one register and then copy that to all registers.
 2.2.Write a program for addition of two 8-bit numbers.

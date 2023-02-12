@@ -1,0 +1,12 @@
+MVI B, 05
+LXI H, 8100
+MOV A, M
+INX H
+Back: CMP M			A=02 M=04  A<M,A<-M04
+JNC Next
+MOV A, M
+Next: INX H
+DCR B
+JNZ Back
+STA 810A
+HLT

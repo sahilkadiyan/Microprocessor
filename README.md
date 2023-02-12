@@ -33,11 +33,20 @@ LAB ASSIGNMENT
 6.Write a program to add ten 8-bit numbers. Assume the numbers are stored in 8500-8509. Store the result in 850A and 850B memory address.
 
 7.Write a program to find the negative numbers in a block of data.
+
 8.Write a program to count the number of one's in a number.
+
 9.Write a program to arrange numbers in Ascending order.
+
 10.Calculate the sum of series of even numbers. 
+
 11.Write an assembly language program to verify how many bytes are present in a given set, which resembles 10101101 in 8085.
+
 12.Write an assembly language program to find the numbers of even parity in ten consecutive memory locations in 8085.
+
 13.Write an assembly language program to convert a BCD number into its equivalent binary in 8085.
+
 14.Write an assembly language program for exchange the contents of memory location.
+
 15.Write a program to find the largest number in an array of 10 elements.
+

@@ -1,0 +1,24 @@
+->Direct Addressing Mode:
+LHLD 8100  (Load HL pair using Direct addressing from memory location whose 16-bit address is denoted as a16. So the previous content of HL register pair will get updated with the new 16-bits value)
+XCHG   (1 byte) (exchange the contents of H-L pair to D-E pair)
+LHLD 8102  (3 byte)
+DAD D  (1 byte)(It is used to add directly two 16 bit numbers)
+SHLD 8104 (store H-L regiter direct)
+HLT
+
+->Indirect Addressing Mode:
+LXI B,8100   
+LDAX B  (load AC indirect)
+MOV D,A
+LXI B,8102
+LDAX B
+ADD D
+STA 8104
+LXI B,8101
+LDAX B    (load AC indirect)
+MOV D,A
+LXI B,8103
+LDAX B
+ADC D  (ADC: Add register to accumulator with carry)
+STA 8105
+HLT

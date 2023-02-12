@@ -1,0 +1,13 @@
+LXI H 8100
+MOV A,M
+INX H
+MOV B,M
+MVI C,00H
+ADD B
+JNC (INXH)   [Jump if not carry]
+INR C
+INX H
+MOV M,A
+INX H
+MOV M,C
+HLT

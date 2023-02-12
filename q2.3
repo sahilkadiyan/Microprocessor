@@ -1,0 +1,20 @@
+;Direct Addressing Mode:
+LDA 8100   (LoaD Accumulator with the contents from memory) (3 byte)
+MOV B,A     (move the contents of ac into register B)(1 byte)
+LDA 8101    (Now load the accumulator directly with 8101)
+ADD B       (now add the contents of register B and AC)
+STA 8102    (store the contents of AC into memory loaction at 8102) (3 byte)
+HLT
+
+;Indirect Addressing Mode:
+LXI B,8100  
+LDAX B (load accumulator indirect)
+MOV D,A  
+LXI B,8101
+LDAX B
+ADD D
+STA 8102
+HLT
+
+;8100->14
+;8101->01

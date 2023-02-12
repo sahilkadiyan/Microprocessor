@@ -1,0 +1,13 @@
+MVI C, 05         (move the 05 to register C)(here it is used as a count variable so that we can check for the length of the series of data)
+MVI B, 00					A-1000 0001=81
+LXI H, 8101					    1000 0000 	
+Back: MOV A, M
+ANI 80			// If MSB =1 then number is negative		
+JZ Skip			// jump if MSB=0 then number is positive
+INR B
+Skip: INX H
+DCR C
+JNZ Back
+MOV A, B
+STA 8109
+HLT

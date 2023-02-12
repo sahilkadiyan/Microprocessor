@@ -1,0 +1,13 @@
+8200 	MVI C, 0A			(in total 10 numbers)			    	        M
+8201	0A	
+8202	LXI H, 8100				8100=02,8101=03,8104=04…..
+8203  00
+8204	81
+8205 MVI A,00
+8206 00
+8207: ADD M
+INX H
+DCR C
+JNZ 8207
+STA 810A
+HLT

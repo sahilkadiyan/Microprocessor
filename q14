@@ -1,0 +1,8 @@
+;Direct Addressing Mode
+LDA 8200
+MOV B,A
+LDA 8400
+STA 8200
+MOV A,B
+STA 4000
+HLT

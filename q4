@@ -1,0 +1,10 @@
+MVI C, 0A
+LXI H, 8100
+LXI D, 8200
+Back: MOV A, M
+STAX D
+INX H
+INX D
+DCR C
+JNZ Back  (jump if not zero)
+HLT
